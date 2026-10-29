@@ -13,12 +13,12 @@ const mockStudentDb = [
     }
 ]
 
-function getStudentsAPI() {
+export function getStudentsAPI() {
     return mockStudentDb;
 }
 
 
-function addStudentsAPI(newStudentData) {
+export function addStudentsAPI(newStudentData) {
     const savedStudent = {
         id: Date.now() + 2,
         ...newStudentData
@@ -34,13 +34,11 @@ console.log("Initial DB State:", getStudentsAPI());
 
 // Test Case 2: Create a new student and display the newly added student
 const newStudent = addStudentsAPI({
-  firstName:  undefined,
-  lastName: "Jao",
-  email: "sherly.jao@awsys-i.com"
+    firstName: undefined,
+    lastName: "Jao",
+    email: "sherly.jao@awsys-i.com"
 });
 console.log("\nReturn Saved Objects:", newStudent);
 
 // Test Case 3: Display updated database
 console.log("\nUpdated DB State: ", getStudentsAPI());
-
-console.log(mockStudentDb.map(fName => fName.firstName))
