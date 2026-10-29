@@ -31,7 +31,6 @@ const renderTable = (dataArray) => {
 
 };
 
-
 studentForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -60,3 +59,4 @@ const initApp = async () => {
 };
 
 document.addEventListener('DOMContentLoaded', initApp);
+

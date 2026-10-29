@@ -1,12 +1,14 @@
+let addOne = 0
+
 const mockStudentDb = [
     {
-        id: Date.now(),
+        id: Date.now() + addOne++,
         firstName: "Lawrde Darryle",
         lastName: "Amancio",
         email: "lawrde.amancio@awsys-i.com"
     },
     {
-        id: Date.now() + 1,
+        id: Date.now() + addOne++,
         firstName: "Francis Benedict",
         lastName: "Chavez",
         email: "francis.chavez@awsys-i.com"
@@ -20,7 +22,7 @@ export function getStudentsAPI() {
 
 export function addStudentsAPI(newStudentData) {
     const savedStudent = {
-        id: Date.now() + 2,
+        id: Date.now() + addOne++,
         ...newStudentData
     }
 
@@ -34,7 +36,7 @@ console.log("Initial DB State:", getStudentsAPI());
 
 // Test Case 2: Create a new student and display the newly added student
 const newStudent = addStudentsAPI({
-    firstName: undefined,
+    firstName: "Sherly",
     lastName: "Jao",
     email: "sherly.jao@awsys-i.com"
 });
