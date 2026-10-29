@@ -11,7 +11,8 @@ const renderTable = (dataArray) => {
     if (!dataArray || dataArray.length === 0) {
         studentTableBody.innerHTML = `
       <tr>
-        <td colspan="4" style="text-align: center;">No student records found.</td>
+        <td colspan="4" style="text-align: center;">No student 
+        records found.</td>
       </tr>
     `;
         return;
