@@ -11,11 +11,11 @@ const mockStudentDb = [
         lastName: "Chavez",
         email: "francis.chavez@awsys-i.com"
     }
-]
+];
 
 export function getStudentsAPI() {
     return mockStudentDb;
-}
+};
 
 
 export function addStudentsAPI(newStudentData) {
@@ -26,7 +26,7 @@ export function addStudentsAPI(newStudentData) {
 
     mockStudentDb.push(savedStudent);
     return savedStudent
-}
+};
 
 
 // Test Case 1: Display the initial populated database.

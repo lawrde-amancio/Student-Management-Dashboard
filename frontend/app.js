@@ -26,8 +26,11 @@ const renderTable = (dataArray) => {
           <td>${student.email}</td>
         `;
         studentTableBody.appendChild(row);
+
     });
+
 };
+
 
 studentForm.addEventListener('submit', async (e) => {
     e.preventDefault();
